@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link id="icon" rel="shortcut icon" href="favicon.ico" />
+    <title>年会抽奖_升达康科技有限公司</title>
+    <link rel="stylesheet" href="./Scripts/style.css">
+    <link rel="stylesheet" href="./Scripts/animate.css">
+    <script src="./Scripts/jquery-1.10.2.js"></script>
+    <script src="./Scripts/jquery.min.js"></script>
+    <script src="./Scripts/common.js"></script>
+    <script src="./Scripts/index.js"></script>
+    <script id="click-heart" src="./Scripts/click-heart.min.js" async="async" mobile="false"></script>
+    <style type="text/css">.unselectable{ -moz-user-select:none; -ms-user-select:none; -webkit-user-select:none; -o-user-select:none;}</style>
+</head>
+<body class="unselectable">
+    <div class="lunbo_div">
+        <div style="padding: 10px;"><span class="span_bm" style="font-size: 16px;">中奖名单</span></div>
+        <div id="bm_content" class="bm_content">
+            <table class="table-condensed">
+                <thead style="position: fixed;background-color: #e3616c;">
+                    <tr>
+                        <th style="width: 50px; text-align: right;">姓名</th>
+                        <th style="width:138px;">奖项</th>
+                        <th style="width: 50px;">奖品</th>
+                    </tr>
+                </thead>
+                <tbody id="tb1">
+                    <tr>
+                        <td class="ellipsis">---</td>
+                        <td class="ellipsis">---</td>
+                        <td class="ellipsis">---</td>
+                    </tr>
+                </tbody>
+                <tbody id="tb2"></tbody>                
+            </table>
+        </div>
+    </div>
+<div>
+    <header>
+        <div></div>
+    </header>
+    <section>
+        <div class="hide" id="luckyDrawing"><input id="showName" readonly="" type="text"></div>
+        <div class="hide" id="result">
+            <div></div>
+        </div>
+    </section>
+    <footer>
+        <div><input type="number" id="txtNum" value="2" placeholder="" disabled style="display:none">
+            <input type="text" id="txtPrize" value="欢乐奖：耳机" placeholder="" disabled style="color:#ff0000;font-weight: bold;">
+            <button id="btnStart">开始</button>
+            <button id="btnReset">&nbsp;</button>
+        </div>
+    </footer>
+
+</div>
+<div id="bgLuckyDrawEnd"></div>
+<div id="iconDiv" class="animated fadeIn">
+    <span class="animated shake">
+        <img src="./img/01.png">
+    </span>
+    <span class="animated pulse">
+        <img src="./img/02.png">
+    </span>
+    <span class="animated swing">
+        <img src="./img/03.png">
+    </span>
+    <span class="animated wobble">
+        <img src="./img/04.png">
+    </span>
+    <span class="animated pulse">
+        <img src="./img/05.png">
+    </span>
+    <span class="animated pulse">
+        <img src="./img/06.png">
+    </span>
+</div>
+<div class="luck_cloud"></div><div class="luck_cloud luck_cloud_1"></div><div class="luck_cloud luck_cloud_2"></div>
+<div class="luck_cloud" style="left:-3%;top:60%;"></div><div class="luck_cloud luck_cloud_2" style="top: 0%;right: -5%;"></div>
+<footer id="footer"><div id="footer-wrap" style="padding: 10px;"><div class="copyright">©2024 By 墨尘AI</div></div></footer>
+<audio style="display:none" loop preload="auto"><source src='./mp3/prepare.mp3'></audio><audio style="display:none" preload="auto"><source src='./mp3/win.mp3'></audio>
+<script src="./Scripts/fireworks.js"></script>
+</body>
+</html>
