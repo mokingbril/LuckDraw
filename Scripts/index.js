@@ -147,6 +147,7 @@ var scrollMove = null;
 function autoScroll() {
     var box = $("#bm_content")[0]; var l1 = $("#tb1")[0];
     if (l1.offsetHeight > box.offsetHeight) {
+        try{clearInterval(scrollMove);}catch{}
         document.getElementById("tb2").innerHTML = l1.innerHTML;//克隆list1的数据，使得list2和list1的数据一样
         scrollMove = setInterval(scrollup, 30);//数值越大，滚动速度越慢
         box.onmouseover = function () { clearInterval(scrollMove); }
