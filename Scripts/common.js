@@ -1,7 +1,3 @@
-/**
- * Created by c-zouzhongxing on 2017/1/4.
- */
-//201604260540 by ati 显示
 function showDialog(promptStr) {
     var tempStr = "<div class='Dialog'><div><div>" + promptStr + "<div><button class='btnCloseDialog'>确定</button></div></div></div></div>";
     $("body").append(tempStr).find(".Dialog").find("button").on("click", function () {
