@@ -554,6 +554,7 @@ $(function () {
 		}
 
 		self.welcome_fire = function() {
+			try{clearInterval(timerId);}catch{}
 			var mx_array = [0.05, 0.09, 0.16, 0.24, 0.28, 0.36, 0.50, 0.63, 0.71, 0.76, 0.81, 0.91];
 			var my_array = [0.86, 0.66, 0.50, 0.33, 0.16, 0.08, 0.07, 0.14, 0.32, 0.49, 0.78, 0.86];
 			timerId = setInterval(() => { custom_fire(mx_array, my_array); }, 600);
